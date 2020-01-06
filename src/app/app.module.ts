@@ -10,8 +10,6 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
-import { Cart2Service } from './cart2.service';
-import { Cart2Component } from './cart2/cart2.component';
 
 @NgModule({
   imports: [
@@ -29,11 +27,10 @@ import { Cart2Component } from './cart2/cart2.component';
     TopBarComponent,
     ProductListComponent,
     ProductDetailsComponent,
-    CartComponent,
-    Cart2Component
+    CartComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService, Cart2Service]
+  providers: [CartService]
 })
 export class AppModule { }
 
