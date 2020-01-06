@@ -1,27 +1,27 @@
 export const products = [
   {
     name: 'Vol 1| Issue 1 | Apr-Jun 2018',
-    price: 799,
+    price: 29.99,
     description: 'Interview with SNHB CEO Mduduzi Dlamini'
   },
   {
     name: 'Vol 1| Issue 2 | Jul-Sep 2018',
-    price: 699,
+    price: 20.99,
     description: 'SNPF GM Finance & Business Development Langalakhe Dlamini'
   },
   {
     name: 'Vol 1| Issue 3 | Oct-Dec 2018',
-    price: 299,
+    price: 20.99,
     description: 'One on One Moses Motsa'
   },
    {
     name: 'Vol 1| Issue 4 | Oct-Dec 2018',
-    price: 299,
+    price: 20.99,
     description: 'Busi Mayisela talks Property & Business'
   },
    {
     name: 'Vol 1| Issue 5 | Oct-Dec 2018',
-    price: 299,
+    price: 20.99,
     description: 'Matata Group CEO unpacka opportunities in Eswatini'
   }
  ];

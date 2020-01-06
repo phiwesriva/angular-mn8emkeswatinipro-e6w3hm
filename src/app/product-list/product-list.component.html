@@ -1,7 +1,7 @@
 
   <h2>Previous Publications</h2>
 
-<d
+<div *ngFor="let product of products; index as productId">
 
   <h3>
     <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
