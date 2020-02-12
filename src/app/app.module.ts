@@ -10,6 +10,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
+import { FreeComponent } from './free/free.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { CartComponent } from './cart/cart.component';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'free', component: FreeComponent },
     ])
   ],
   declarations: [
@@ -27,7 +29,8 @@ import { CartComponent } from './cart/cart.component';
     TopBarComponent,
     ProductListComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
+    FreeComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
