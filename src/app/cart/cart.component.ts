@@ -7,7 +7,7 @@ import { CartService } from '../cart.service';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent implements OnInit {
+export class CartComponent{
   items;
 
   constructor(
