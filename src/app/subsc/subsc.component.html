@@ -1,19 +1,96 @@
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
-  <div>
-    <label for="name">
+<div>
+<label for="insights">
+  Insights(Research)
+</label>
+<input id="insights" type="checkbox" formControlName="insights" checked value= "99">
+</div>
+
+<div>
+   <label for="copiesperissue">
+      Select number of copies per issue
+    </label>
+    <select matNativeControl required>
+<option value="1">1 copy per issue</option>
+<option value="2">2 copies per issue</option>
+<option value="3">3 copies per issue</option>
+<option value="4">4 copies per issue</option>
+<option value="5">5 copies per issue</option>
+<option value="6">6 copies per issue</option>
+<option value="7">7 copies per issue</option>
+<option value="8">8 copies per issue</option>
+<option value="9">9 copies per issue</option>
+<option value="10">10 copies per issue</option>
+<option value="11">11 copies per issue</option>
+<option value="12">12 copies per issue</option>
+<option value="13">13 copies per issue</option>
+<option value="14">14 copies per issue</option>
+<option value="15">15 copies per issue</option>
+<option value="16">16 copies per issue</option>
+<option value="17">17 copies per issue</option>
+<option value="18">18 copies per issue</option>
+<option value="19">19 copies per issue</option>
+<option value="20">20 copies per issue</option>
+  </select>
+</div>
+
+<div>
+    <label for="nameandsurname">
       Name
     </label>
-    <input id="name" type="text" formControlName="name">
-  </div>
+    <input id="nameandsurname" type="text" formControlName="nameandsurname">
+</div>
 
-  <div>
+<div>
+    <label for="Cname">
+      Company Name(If applicable)
+    </label>
+    <input id="Cname" type="text" formControlName="Cname">
+</div>
+
+<div>
     <label for="address">
       Address
     </label>
     <input id="address" type="text" formControlName="address">
-  </div>
-  
+</div>
+
+<div>
+    <label for="Tnumber">
+Tel Number
+ </label>
+    <input id="Tnumber" type="text" formControlName="Tnumber">
+</div>
+
+<div>
+    <label for="Cnumber">
+Cell Number
+ </label>
+    <input id="Cnumber" type="text" formControlName="Cnumber">
+</div>
+
+<div>
+    <label for="Eaddress">
+      Email Address
+    </label>
+    <input id="Eaddress" type="text" formControlName="Eaddress">
+</div>
+
+<div>
+    <label for="DOB">
+Date of Birth yyyy-mm-dd(Password for online edition)
+</label>
+<input id="DOB" type="text" formControlName="DOB">
+</div>
+
+
+<div>
+    <label for="Paddress">
+      Postal Address
+    </label>
+    <input id="Paddress" type="text" formControlName="Paddress">
+</div>
 
   <button class="button" type="submit">Submit</button>
 
