@@ -2,7 +2,7 @@
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #fa5f06;
+  color: #d2a719;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -102,7 +102,7 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color:#fa5f06;
+  background-color:#d2a719;
   color: rgb(247, 242, 242);
   border: none;
 }
@@ -121,11 +121,11 @@ label {
 
 .fancy-button {
   background-color: rgb(243, 239, 239);
-  color: #1976d2;
+  color: #d2a719;
 }
 
 .fancy-button i.material-icons {
-  color: #1976d2;
+  color: #d2a719;
   padding-right: 4px;
 }
 

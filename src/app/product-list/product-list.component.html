@@ -1,13 +1,12 @@
 
-  <h2>Previous Publications</h2>
+ <h align="center">Previous Publications!!!</h3>
 
 <div *ngFor="let product of products; index as productId">
 
-  <h3>
+
     <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
       <img src="https://raw.githubusercontent.com/phiwesriva/angular-mn8emkeswatinipro-e6w3hm/master/src/assets/Issue7.png">
     </a>
-  </h3>
 
   <p *ngIf="product.description">
    {{ product.description }}
