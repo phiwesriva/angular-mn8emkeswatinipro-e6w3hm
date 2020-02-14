@@ -12,11 +12,14 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { FreeComponent } from './free/free.component';
 import { SubscComponent } from './subsc/subsc.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
     NgbModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
@@ -24,6 +27,7 @@ import { SubscComponent } from './subsc/subsc.component';
       { path: 'cart', component: CartComponent },
       { path: 'free', component: FreeComponent },
       { path: 'subsc', component: SubscComponent },
+      { path: 'shipping', component: ShippingComponent },
     ])
   ],
   declarations: [
@@ -33,7 +37,8 @@ import { SubscComponent } from './subsc/subsc.component';
     ProductDetailsComponent,
     CartComponent,
     FreeComponent,
-    SubscComponent
+    SubscComponent,
+    ShippingComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
