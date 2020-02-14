@@ -31,7 +31,7 @@ export const products = [
   },*/
   {
     name: 'Vol 1| Issue 7 | Dec-Jan 2020',
-    price: 20.99,
+    price: .99,
     description: 'The Grand Opening. His Majesty King Mswati iii officialy opens new lnandmarks in the Capital city'
   }
  ];
