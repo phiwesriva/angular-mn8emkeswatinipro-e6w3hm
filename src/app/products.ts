@@ -1,9 +1,9 @@
 export const products = [
-  {
+  /*{
     name: 'Vol 1| Issue 1 | Apr-Jun 2018',
     price: 29.99,
     description: 'Interview with SNHB CEO Mduduzi Dlamini'
-  }/*,
+  },
   {
     name: 'Vol 1| Issue 2 | Jul-Sep 2018',
     price: 20.99,
@@ -15,15 +15,25 @@ export const products = [
     description: 'One on One Moses Motsa'
   },
    {
-    name: 'Vol 1| Issue 4 | Oct-Dec 2018',
+    name: 'Vol 1| Issue 4 | Jan-Feb 2019',
     price: 20.99,
     description: 'Busi Mayisela talks Property & Business'
   },
    {
-    name: 'Vol 1| Issue 5 | Oct-Dec 2018',
+    name: 'Vol 1| Issue 5 | Apr-May 2019',
     price: 20.99,
     description: 'Matata Group CEO unpacka opportunities in Eswatini'
-  }*/
+  },
+  {
+    name: 'Vol 1| Issue 6 | Jun-Aug 2019',
+    price: 20.99,
+    description: 'Busi Mayisela talks Property & Business'
+  },*/
+  {
+    name: 'Vol 1| Issue 7 | Dec-Jan 2020',
+    price: 20.99,
+    description: 'Busi Mayisela talks Property & Business'
+  }
  ];
 
 
