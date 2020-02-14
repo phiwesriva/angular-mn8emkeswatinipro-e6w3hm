@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-subsc',
@@ -6,10 +8,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subsc.component.css']
 })
 export class SubscComponent implements OnInit {
+checkoutForm;
+  constructor(private cartService: CartService,
+    private formBuilder: FormBuilder) { 
+    this.checkoutForm = this.formBuilder.group({
+      insights: '',
+      copiesperissue: '',
+      nameandsurname: '',
+      Cname: '',
+      address: '',
+      Tnumber: '',
+      Cnumber: '',
+      Eaddress: '',
+       Eaddress: '',
+        DOB: '',
+         Paddress: ''
 
-  constructor() { }
+    });}
 
   ngOnInit() {
+  }
+
+onSubmit(customerData) {
+    // Process checkout data here
+    this.items = this.cartService.clearCart();
+    this.checkoutForm.reset();
+
+    console.warn('Your order has been submitted', customerData);
   }
 
 }

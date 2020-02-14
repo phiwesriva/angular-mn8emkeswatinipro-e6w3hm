@@ -24,4 +24,11 @@ export class CartComponent{
   ngOnInit() {
     this.items = this.cartService.getItems();
   }
+  onSubmit(customerData) {
+    // Process checkout data here
+    this.items = this.cartService.clearCart();
+    this.checkoutForm.reset();
+
+    console.warn('Your order has been submitted', customerData);
+  }
 }
