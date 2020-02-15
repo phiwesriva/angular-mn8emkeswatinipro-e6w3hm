@@ -22,17 +22,17 @@ export const products = [
    {
     name: 'Vol 1| Issue 5 | Apr-May 2019',
     price: 20.99,
-    description: 'Matata Group CEO unpacka opportunities in Eswatini'
+    description: 'The Crescent. Swaki's E45m Retail Landmakr'
   },
   {
     name: 'Vol 1| Issue 6 | Jun-Aug 2019',
     price: 20.99,
-    description: 'Busi Mayisela talks Property & Business'
+    description: 'Matata Estate Project Ownership Opportunities for Emaswati'
   },*/
   {
     name: 'Vol 1| Issue 7 | Dec-Jan 2020',
     price: 50,
-    description: 'The Grand Opening. His Majesty King Mswati iii officialy opens new lnandmarks in the Capital city'
+    description: 'The Grand Opening. His Majesty King Mswati ||| Officialy Opens New Landmarks In The Capital City Steering Mbabane Towards First World Status Appeal'
   }
  ];
 
