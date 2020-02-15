@@ -19,11 +19,11 @@ body {
 
 img {
   max-width: 100%;
-  height: 150;
+  height: 100;
 
   /*border: 1px solid #ddd;*/
   /*border-radius: 4px;*/
-  padding: 10px;
+  /*padding: 1px;*/
   
 }
 img:hover {
@@ -33,6 +33,7 @@ img:hover {
 .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 router-outlet + *  {
@@ -132,8 +133,8 @@ label {
 /* Top Bar */
 
 app-top-bar {
-  width: 480px;
-  height: 320px;
+  width: 100%;
+  height: auto;
   /*background-color: #0f0f0f;*/
   /*padding: 1px;*/
   display: flex;
