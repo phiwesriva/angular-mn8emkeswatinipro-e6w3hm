@@ -1,4 +1,4 @@
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)"[formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 <h2>2020 ESWATINI PROPERTY REVIEW SUBSCRIPTION FORM</h2>
 <p><label for="Price"> Price per annum:</label> E300 including delivery <label for="frequency">Frequency:</label> Every Two Months Number of copies per annum:  6  
 <label for="package">Package includes:</label> Eswatini Property Review Print x 6, Online Edition, Podcasts and Newsletters </p>
@@ -102,8 +102,10 @@ Date of Birth yyyy-mm-dd(Password for online edition)
     <label for="POP">
       Proof Of Payment
     </label>
-    <input id="POP" type="" formControlName="POP">
+    <input id="POP" type="file" formControlName="POP">
 </div>
+
+=<output name="x" for="a b"></output>
 
   <button class="button" type="submit">Submit</button>
 
