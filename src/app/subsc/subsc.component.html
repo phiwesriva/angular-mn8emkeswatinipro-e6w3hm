@@ -1,4 +1,4 @@
-<form oninput="x.value=parseInt(a.value)+parseInt(b.value)"[formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<form oninput="x.value=parseInt(insights.value)+parseInt(copiesperissue.value)" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 <h2>2020 ESWATINI PROPERTY REVIEW SUBSCRIPTION FORM</h2>
 <p><label for="Price"> Price per annum:</label> E300 including delivery <label for="frequency">Frequency:</label> Every Two Months Number of copies per annum:  6  
 <label for="package">Package includes:</label> Eswatini Property Review Print x 6, Online Edition, Podcasts and Newsletters </p>
@@ -17,30 +17,31 @@ Insights(Research)
    <label for="copiesperissue">
       Select number of copies per issue
     </label>
-    <select matNativeControl required>
-<option value="1">1 copy per issue</option>
-<option value="2">2 copies per issue</option>
-<option value="3">3 copies per issue</option>
-<option value="4">4 copies per issue</option>
-<option value="5">5 copies per issue</option>
-<option value="6">6 copies per issue</option>
-<option value="7">7 copies per issue</option>
-<option value="8">8 copies per issue</option>
-<option value="9">9 copies per issue</option>
-<option value="10">10 copies per issue</option>
-<option value="11">11 copies per issue</option>
-<option value="12">12 copies per issue</option>
-<option value="13">13 copies per issue</option>
-<option value="14">14 copies per issue</option>
-<option value="15">15 copies per issue</option>
-<option value="16">16 copies per issue</option>
-<option value="17">17 copies per issue</option>
-<option value="18">18 copies per issue</option>
-<option value="19">19 copies per issue</option>
-<option value="20">20 copies per issue</option>
+    <select matNativeControl required id="copiesperissue">
+<option value="300">1 copy per issue</option>
+<option value="600">2 copies per issue</option>
+<option value="900">3 copies per issue</option>
+<option value="1200">4 copies per issue</option>
+<option value="1500">5 copies per issue</option>
+<option value="1800">6 copies per issue</option>
+<option value="2100">7 copies per issue</option>
+<option value="2400">8 copies per issue</option>
+<option value="2700">9 copies per issue</option>
+<option value="3000">10 copies per issue</option>
+<option value="3300">11 copies per issue</option>
+<option value="3600">12 copies per issue</option>
+<option value="3900">13 copies per issue</option>
+<option value="4200">14 copies per issue</option>
+<option value="4500">15 copies per issue</option>
+<option value="4800">16 copies per issue</option>
+<option value="5100">17 copies per issue</option>
+<option value="5400">18 copies per issue</option>
+<option value="5700">19 copies per issue</option>
+<option value="6000">20 copies per issue</option>
   </select>
 </div>
 
+Your total is going to be =<output name="x" for="insights copiesperissue"></output>
 <div>
     <label for="nameandsurname">
       Name
@@ -105,7 +106,7 @@ Date of Birth yyyy-mm-dd(Password for online edition)
     <input id="POP" type="file" formControlName="POP">
 </div>
 
-=<output name="x" for="a b"></output>
+
 
   <button class="button" type="submit">Submit</button>
 
