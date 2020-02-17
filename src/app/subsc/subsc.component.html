@@ -1,18 +1,22 @@
 <form oninput="x.value=parseInt(insights.value)+parseInt(copiesperissue.value)" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
-<h2>2020 ESWATINI PROPERTY REVIEW SUBSCRIPTION FORM</h2>
+<!--<h2>2020 ESWATINI PROPERTY REVIEW SUBSCRIPTION FORM</h2>-->
 <p><label for="Price"> Price per annum:</label> E300 including delivery <label for="frequency">Frequency:</label> Every Two Months Number of copies per annum:  6  
 <label for="package">Package includes:</label> Eswatini Property Review Print x 6, Online Edition, Podcasts and Newsletters </p>
 
 <label for="additional">
-For an additional E99  once off you get Insights every four months, click in the box 
+For an additional E99  once off you get Insights every four months,make yyour selection below 
 </label>
-<div id="catlist">
-<label for="insights">
+<div >
+<!--<label for="insights">
 Insights(Research)
-</label>
-<input id="insights" type="checkbox" [formControl]="insights" checked value="0" price="99">
-</div> 
+</label>-->
+<select matNativeControl required id="insights">
+  <option value="0">Please select</option>
+<option value="99">Insights(Research)</option>
+</select>
+</div>
+
 <!--
 <p>
   Value: {{ insights.value }}
@@ -20,10 +24,11 @@ Insights(Research)
 </p>-->
 
 <div>
-   <label for="copiesperissue">
+  <!-- <label for="copiesperissue">
       Select number of copies per issue
-    </label>
+    </label>-->
     <select matNativeControl required id="copiesperissue">
+<option value="0">Select number of copies per issue</option>
 <option value="300">1 copy per issue</option>
 <option value="600">2 copies per issue</option>
 <option value="900">3 copies per issue</option>
@@ -48,7 +53,7 @@ Insights(Research)
 </div>
 
 
-Your total is going to be =<output name="x" for="insights copiesperissue"></output>
+Your total is going to be =E<output name="x"  value="300" for="insights copiesperissue"></output>
 <div>
     <label for="nameandsurname">
       Name
