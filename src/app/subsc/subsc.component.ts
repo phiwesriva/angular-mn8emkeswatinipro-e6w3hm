@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
 import { FormBuilder } from '@angular/forms';
+import { FormControl } from '@angular/forms';
+import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-subsc',
@@ -9,16 +11,17 @@ import { FormBuilder } from '@angular/forms';
 })
 export class SubscComponent implements OnInit {
 checkoutForm;
+insights = new FormControl('');
   constructor(private cartService: CartService,
     private formBuilder: FormBuilder) { 
     this.checkoutForm = this.formBuilder.group({
       insights: '',
-      copiesperissue: '',
-      nameandsurname: '',
+      copiesperissue: ['',Validators.required],
+      nameandsurname: ['',Validators.required],
       Cname: '',
       address: '',
       Tnumber: '',
-      Cnumber: '',
+      Cnumber: ['',Validators.required],
       Eaddress: '',
        Eaddress: '',
         DOB: '',

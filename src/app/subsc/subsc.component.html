@@ -10,8 +10,11 @@ For an additional E99  once off you get Insights every four months, click in the
 <label for="insights">
 Insights(Research)
 </label>
-<input id="insights" type="checkbox" formControlName="insights" checked value="99">
+<input id="insights" type="checkbox" [formControl]="insights" checked value="99">
 </div>
+<p>
+  Value: {{ insights.value }}
+</p>
 
 <div>
    <label for="copiesperissue">
@@ -46,7 +49,7 @@ Your total is going to be =<output name="x" for="insights copiesperissue"></outp
     <label for="nameandsurname">
       Name
     </label>
-    <input id="nameandsurname" type="text" formControlName="nameandsurname">
+    <input id="nameandsurname" type="text" [formControl]="nameandsurname" >
 </div>
 
 <div>
