@@ -14,6 +14,8 @@ import { FreeComponent } from './free/free.component';
 import { SubscComponent } from './subsc/subsc.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
@@ -28,6 +30,8 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'free', component: FreeComponent },
       { path: 'subsc', component: SubscComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'news', component: NewsComponent },
+      { path: 'contact', component: ContactComponent },
     ])
   ],
   declarations: [
@@ -38,7 +42,9 @@ import { ShippingComponent } from './shipping/shipping.component';
     CartComponent,
     FreeComponent,
     SubscComponent,
-    ShippingComponent
+    ShippingComponent,
+    NewsComponent,
+    ContactComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
