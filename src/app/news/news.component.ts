@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { products } from '../products';
 
 @Component({
   selector: 'app-news',
@@ -16,4 +17,5 @@ images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.rand
     config.pauseOnHover = false;
     config.wrap = true;
   }
+  products = products;
 }
