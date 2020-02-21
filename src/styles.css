@@ -2,7 +2,7 @@
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #0a0a0a;
+  color: #444242;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -88,7 +88,7 @@ input {
   border-radius: 2px;
   padding: 8px;
   margin-bottom: 16px;
-  border: 1px solid rgb(14, 12, 12);
+  border: 1px solid rgb(104, 102, 102);
 }
 
 label {
@@ -102,12 +102,13 @@ label {
 /* Button */
 .button, button {
   display: inline-flex;
+  width: 100%;
   align-items: center;
   padding: 8px 16px;
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color:rgb(10, 10, 10);
+ /* background-color:rgb(10, 10, 10);*/
   color:#d2a719;
   border: none;
 }
@@ -131,7 +132,7 @@ label {
 
 .fancy-button i.material-icons {
   color: #d2a719;
-  padding-right: 1px;
+  /*padding-right: 1px;*/
 }
 
 /* Top Bar */
